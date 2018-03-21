@@ -8,8 +8,79 @@ body {
   padding-top: 54px;
 }
 
+#yeezy350{
+  float:left;
+  position: relative;
+  width: 25%; 
+  height: 25%;
+  margin: 34px -105px 35px 67px;
+}
+
+#yeezy750{
+  float:left;
+  width: 25%; 
+  height: 25%;
+  position: relative;
+  margin: 54px 55px 55px -98px;
+  
+}
+
+#AdidasUltraBoosts{
+  float:left;
+  width: 25%; 
+  height: 25%;
+  margin: 31px 115px -1px -135px;
+}
+
+#AdidasPowerphase{
+  float:left;
+  width: 25%; 
+  height: 25%;
+  margin: 32px -139px 40px 110px;
+
+}
+
+
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
   }
+}
+
+.row350{
+  display:flex;
+  flex-wrap:wrap;
+  margin-right: -137px;
+  margin-left: 57px;
+  margin-top: -23px;
+  margin-bottom: 50px; 
+}
+
+.row750{
+  display:flex;
+  flex-wrap:wrap;
+  margin-right: -268px;
+  margin-left: 137px;
+  margin-bottom: 1px ;
+  margin-top: -74px;
+
+}
+
+.AdidasBoosts{
+  display:flex;
+  flex-wrap:wrap;
+  margin-right: -248px;
+  margin-left: 109px;
+  margin-bottom: 68px ;
+  margin-top: -14px;
+
+}
+
+.Powerphase{
+  flex-wrap:wrap;
+  margin-right: -145px;
+  margin-left: 9px;
+  margin-bottom: 11px ;
+  margin-top: -54px;
+
 }
