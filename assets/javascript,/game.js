@@ -51,7 +51,7 @@ for (var i = 0; i < shoeOptions.length; i++) {
     imageShoe.addClass("image-shoe"); 
     console.log("add class to each picture");
 
-    shoeImageOptions = ["Files/assets/images/Yeezy350.png", "Files/assets/images/Yeezy750.png", "Files/assets/images/AdidasBoosts.png", "Files/assets/images/AdidasPowerphase.png"];
+    shoeImageOptions = ["assets/images/Yeezy350.png", "assets/images/Yeezy750.png", "assets/images/AdidasBoosts.png", "assets/images/AdidasPowerphase.png"];
 
     imageShoe.attr("src", shoeImageOptions[i]);
     console.log("gives all html with tag src the yeezy picture");
