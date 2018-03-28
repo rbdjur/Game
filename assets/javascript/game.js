@@ -32,7 +32,7 @@ var counter = 0;
 // console.log("number values for the 4 shoes");
 
 var shoeOptions = [Math.floor((Math.random() * 10) + 2), Math.floor((Math.random() * 10) + 2), Math.floor((Math.random() * 10) + 2), Math.floor((Math.random() * 10) + 2)];
-// console.log("random number values for the 4 shoes"); 
+console.log("random number values for the 4 shoes"); 
 
 //create for loop to create value for every numberOptions 
 
@@ -46,7 +46,7 @@ for (var i = 0; i < shoeOptions.length; i++) {
     shoeImageOptions = ["assets/images/Yeezy350.png", "assets/images/Yeezy750.png", "assets/images/AdidasBoosts.png", "assets/images/AdidasPowerphase.png"];
 
     imageShoe.attr("src", shoeImageOptions[i]);
-    // console.log("gives all html with tag src the yeezy picture");
+    console.log("gives all html with tag src the yeezy picture");
 
     // each imageShoe will be given data attribute called data-shoeValue/ 
     // data attribute set equal to array value
@@ -57,14 +57,12 @@ for (var i = 0; i < shoeOptions.length; i++) {
 }
 // This time, our click event applies to every single crystal on the page. Not just one.
     shoes.on("click", ".image-shoe", function() {
-        console.log("clickk");
 
     var shoeValue = ($(this).attr("data-shoeValue"));
     shoeValue = parseInt(shoeValue);
    
     counter += shoeValue;
-    scoreCounterWins();
-    
+
     // alert("New Score: " + counter);
 
 // // put the shoeValue into the current box score. 
@@ -85,49 +83,73 @@ for (var i = 0; i < shoeOptions.length; i++) {
     // create 2 variables as a counter
     // hold L as loses
     // comeup as wins 
-    var losses = 0;
-    var wins = 0;
-
-    var checkWins = function(){
-        if 
-    }
+    var holdL = 0;
+    var comeUp = 0;
     
     // Create a function that increaes the comeup variable by 1 when counter = targetNumber
     var scoreCounterWins =  function() {
-        console.log("Inside scorecounter");
         if (counter === targetNumber) {
-            // var nodewin = document.getElementById("scorecounter"); 
-            wins++;
+            var nodewin = document.getElementById("scorecounter"); 
+            nodewin.innerHTML = 100;
+            comeUp;
             console.log("calls on score counter to put in ComeUp counter in");
-            // function(checkWins)
+        }else{
+            console.log('keep trying')
         }
 
     };
-
     scoreCounterWins();
-    console.log("this is for wins" + wins);
 
         // Create a function that increaes the comeup variable by 1 when counter = targetNumber
 
     var scoreCounterLoses = function() {
-        if (counter > targetNumber) {
+        if (counter === targetNumber) {
             document.getElementById("scorecounter1"); 
-            losses++;
+            hodL++;
             console.log("calls on score counter to put in ComeUp counter in");
         }
 
     };
     scoreCounterLoses();
-    console.log("This is for losses" + losses);
 
-    // use Jquery to put the variable losses into the element El
-    $("#El").text(losses);
-    console.log("should display 0 as losses"); 
+    
 
-     // use Jquery to put the variable wins into the comeup element
+    // var scoreCounterLoses = document.getElementById("card-footer");
+    // console.log("calls on the btn btn-primary to put Loses counter in");
 
+    
+    // if (counter === targetNumber) {
+    //     scoreCounterWins++;
+    //     console.log("if target number reach, increase comeup variable by 1")
+    // }
+    // else if (counter > targetNumber) {
+    //     scoreCounterLoses++;
+    //     console.log("if counter is greater than target number, increase holdL variable by 1");
+    // }
 
-    // define a function that will reset the game... 
+//     var win = document.getElementById("scorecounter"); 
+//     count = 0;
+//     if (counter === targetNumber) {
+//         count += 1;
+//         console.log("if target number reach, increase comeup variable by 1");
+//     }
+//     else if (counter > targetNumber) {
+//         count += 1;
+//         console.log("if counter is greater than target number, increase holdL variable by 1");
+//     }
+// };
+    
+    
+    
+    
+    // button.innerHTML = "Click me: " + count;
+    // };
 
+    // var lose = document.getElementById("scorecounter1"),
+    // count = 0;
+    // button.onclick = function() {
+    // count += 1;
+    // button.innerHTML = "Click me: " + count;
+    // };
 
 
